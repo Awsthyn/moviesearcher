@@ -69,15 +69,18 @@ function renderData(res) {
 
   btnFav = document.createElement("button");
   btnFav.setAttribute("id", "btnFav");
-  btnFav.innerHTML = "Add to favorites";
+  btnFav.classList.add("plusBtn");
+  btnFav.setAttribute("title", "Add to favorites")
+  btnFav.innerHTML = "+";
 
+  movieData.appendChild(btnFav);
   movieData.appendChild(titleRender);
   titleRender.appendChild(yearRender);
   titleRender.appendChild(runtimeRender);
   titleRender.appendChild(genreRender);
   titleRender.appendChild(directorRender);
   titleRender.appendChild(imdbRatingRender);
-  titleRender.appendChild(btnFav);
+  
 
   btnFav.addEventListener("click", function(){
       addFav();

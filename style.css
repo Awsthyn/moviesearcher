@@ -7,16 +7,22 @@ text-align: center;
 }
 
 #container {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     
 }
 
+#movieData {
+    position: relative;
+}
+
 #poster {
     margin-top: 10px;
-    width: 30vw;
+    width: 20vw;
     border-radius: 15px;
+    position: relative;
 }
 
 #inputMovie {
@@ -27,7 +33,7 @@ text-align: center;
     margin-right: auto;
 }
 
-button {
+.button {
 	box-shadow:inset 0px 1px 0px 0px #54a3f7;
 	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
 	background-color:#007dc1;
@@ -42,14 +48,45 @@ button {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #154682;
 }
-button:hover {
+.button:hover {
 	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
 	background-color:#0061a7;
 }
-button:active {
+.button:active {
 	position:relative;
 	top:1px;
 }
+
+
+
+.plusBtn {
+    position: relative;
+    top: 0;
+    left: -23px;
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	background-color:#fe1a00;
+	border-radius:23px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:10px 15px;
+	text-decoration:none;
+	text-shadow:1px 1px 8px #b23e35;
+}
+.plusBtn:hover {
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	background-color:#ce0100;
+}
+.plusBtn:active {
+	position:relative;
+	top:1px;
+}
+
+        
+
 
 #titleRender {
     font-size: 32px;
