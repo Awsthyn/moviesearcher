@@ -7,7 +7,7 @@ btnInputMovie.addEventListener("click", searchMovie);
 let title, year, runtime, genre, director, imdbRating;
 
 function searchMovie(){
-axios.get("http://www.omdbapi.com/?t=" +  encodeURI(inputMovie.value)   + "&apikey=608f663f")
+axios.get("https://www.omdbapi.com/?t=" +  encodeURI(inputMovie.value)   + "&apikey=608f663f")
     .then(res => renderData(res))
 }
 
